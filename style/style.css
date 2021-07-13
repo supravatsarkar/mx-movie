@@ -18,8 +18,6 @@ header{
 }
 .container{
     width: 1100px;
-    display: flex;
-    align-items: center;
     padding: 0px 10px;
     margin-bottom: 20px;
     background-color: #1c2939;
@@ -27,6 +25,8 @@ header{
 }
 .navigation{
     /* background-color: #1c2939; */
+    display: flex;
+    align-items: center;
     height: 60px;
     justify-content: space-between;
     border-radius: 5px;
@@ -82,12 +82,13 @@ nav .nav-bar a:hover{
     align-items: center;
     color: rgba(255, 255, 255, 0.863);
 }
-.fas{
+.same-effect{
     padding: 0px 10px;
+    transition: transform 0.5s linear;
 }
-.fas:hover{
-    transform: rotate(60deg) scale(1.1);
-    transition: transform 0.5s;
+.same-effect:hover{
+    transform: rotate(60deg) scale(1.2);
+    
 }
 
 /* Top Star Style */
@@ -96,3 +97,60 @@ main{
     justify-content: center;
     
 }
+.top-star{
+    padding:20px;
+}
+.top-title{
+    font-size: 25px;
+    color: rgb(207, 207, 253);
+}
+.stars{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap:20px;
+    grid-row-gap:30px;
+}
+.star{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+    transition: all linear 0.4s;
+    
+}
+.star:hover{
+    box-shadow: 1px 1px 19px 0px #8080808c;
+    transform: scale(1.2);
+}
+.star-info {
+    display: flex;
+    align-items: center;
+}
+.star .star-info img{
+    width: 80px;
+    height: 80px;
+}
+.star-info .star-name{
+    padding-left: 20px;
+}
+.star-rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-left: 20px; */
+    background-color: rgba(248, 81, 81, 0.336);
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-top: 10px;
+    /* width: 50px; */
+}
+.star-rating span{
+    padding-left: 15px;
+}
+.fas.field{
+    color:rgba(255, 255, 0, 0.938);
+}
+.fas.empty{
+    color: rgba(255, 255, 255, 0.938);
+}
+
