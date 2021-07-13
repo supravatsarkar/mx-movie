@@ -1,0 +1,85 @@
+
+/* Font  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* Common Style  */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header style  */
+header{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 1100px;
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    background-color: #1c2939;
+    height: 60px;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 0px 20px;
+
+}
+.left-logo{
+    
+    display: flex;
+    align-items: center;
+    
+}
+.left-logo .fa-play-circle{
+    font-size: 35px;
+    color: #3c8cf0;
+    /* background-color: white; */
+}
+.left-logo .logo-title{
+    margin-left: 20px;
+    color: white;
+    font-size: 25px;
+}
+.movie{
+    font-size: 20px;
+    font-weight: 200;
+}
+nav{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .nav-bar{
+
+}
+nav .nav-bar a{
+    /* display: block; */
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.445);
+    padding: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+nav .nav-bar a:hover{
+    color: white;
+    border-bottom: 3px solid white;
+    border-radius: 3px;
+    transition: all 0.3s;
+    
+}
+.search-setting{
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.863);
+}
+.fas{
+    padding: 0px 10px;
+}
+.fas:hover{
+    transform: rotate(60deg) scale(1.1);
+    transition: transform 0.5s;
+}
