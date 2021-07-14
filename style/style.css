@@ -201,10 +201,13 @@ main{
     left: 0;
     background-color: rgba(0, 0, 0, 0.418);
     z-index: 0;
-    display: none;
+    transform: translateY(340px);
+    /* display: none; */
+    transition: transform ease-in-out 0.5s;
 }
 .moive-banner:hover .transparent{
-    display: block;
+    transform: translateY(0px);
+    /* display: block; */
 }
 .movie h4{
     /* font-size: 20px; */
